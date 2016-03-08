@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page__header {
+  background: url('http://www.supracer.com/wp-content/uploads/2014/05/Laird-Hamilton-Stand-Up-Paddling.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 60rem;
+  margin: auto;
+}
+
+.top-nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-group {
+  display: flex;
+}
+
+.nav-item {
+  margin: 1rem;
+}
+
+.hero {
+  text-align: center;
+  margin: 6rem;
+}
+
+.sub-title {
+  margin: 0.2rem 0 0;
+}
+
+.big-title {
+  margin: 0;
+}
+
+.page__content {
+  flex-grow: 1;
+}
