@@ -40,6 +40,12 @@ ul {
 
 .nav-item {
   margin: 1rem;
+  font-family: sans-serif;
+}
+
+.nav-link {
+  color: orange;
+  text-decoration: none;
 }
 
 .hero {
@@ -49,10 +55,15 @@ ul {
 
 .sub-title {
   margin: 0.2rem 0 0;
+  font-family: sans-serif;
+  color: orange;
 }
 
 .big-title {
   margin: 0;
+  font-family: sans-serif;
+  font-size: 4rem;
+  color: orange;
 }
 
 .page__content {
