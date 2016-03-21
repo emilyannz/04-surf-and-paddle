@@ -15,6 +15,9 @@ body {
 .page__header {
   background: url('http://www.supracer.com/wp-content/uploads/2014/05/Laird-Hamilton-Stand-Up-Paddling.jpg') no-repeat center center fixed;
   background-size: cover;
+  position: absolute;
+  width: 100%;
+  margin-bottom: 3rem;
 }
 
 ul {
@@ -67,5 +70,64 @@ ul {
 }
 
 .page__content {
-  flex-grow: 1;
+  margin-top: 22rem;
+}
+
+.row {
+  display: flex;
+}
+
+.page__main {
+  width: 70%;
+  background: red;
+}
+
+.article-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page__sidebar {
+  width: 30%;
+  margin-left: 1rem;
+  background: blue;
+}
+
+.author-info {
+  width: 100%;
+}
+
+.student-info__profile-pic {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 5rem;
+}
+
+.student-info__name, .student-info__bio {
+  text-align: center;
+  margin: 0.4rem;
+}
+
+.student-info__social-list {
+  margin: auto;
+  text-align: center;
+}
+
+.student-info__social-item {
+  display: inline-block;
+  text-align: center;
+}
+
+.ad-caption {
+  font-family: sans-serif;
+}
+
+.sidebar-heading {
+  text-align: center;
+}
+
+.footer-title {
+
 }
