@@ -1,133 +1,319 @@
 * {
   box-sizing: border-box;
-}
-
-body {
   margin: 0;
+  font-family: sans-serif;
+}
+*::before, *::after {
+  box-sizing: inherit;
+}
+.total {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.header {
+  background-image: url(http://cdn.grindtv.com/wp-content/uploads/2015/08/image1-1.png);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: -1;
+}
+}
+.header:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(63, 76, 167, 0.7);
+}
+.header_navbar {
+  width: 75%;
+  padding: 1rem;
+  z-index: 1;
+  margin: auto;
+}
+.navbar__row {
+  display: flex;
+  align-items: center;
+}
+.navbar_logo {
+  flex-grow: 3;
+  display: flex;
+  align-items: center;
+}
+.navbar_logo_img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+}
+.navbar_logo_text {
+  color: white;
+  padding-left: .5rem;
+  font-weight: normal;
+}
+.header_title {
+  color: white;
+  font-size: 500%;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-shadow: .2rem .2rem black;
+  align-self: center;
+  padding: 3rem 0rem 0rem;
+  z-index: 1;
+}
+.header_sub-title {
+  align-self: center;
+  color: white;
+  padding: .7rem 0rem 7rem;
+  z-index: 1;
+}
+.navbar_search_about {
+  flex-grow: 1;
+  display: flex;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: .02rem .02rem black;
+}
+.navbar_about {
+  margin: 0 .8rem;
+}
+.navbar_search {}
+.search_icon {
+  padding-left: .4rem;
+}
+.main {
+  width: 75%;
+  max-width: 65rem;
+  display: flex;
+  margin: auto;
+  padding: 2rem 0rem;
+  flex-wrap: wrap;
 }
 
-.page {
-  min-height: 100vh;
+/*MIN WIDTH OF MAIN SET TO
+/*Left column styling*/
+
+.main_left {
+  padding: 0rem 3rem 3rem 0rem;
+  flex-basis: 70%;
+  min-width: 15rem;
+  align-self: flex-start;
+  flex-grow: 1;
+  flex-shrink: 1;
   display: flex;
   flex-direction: column;
 }
-
-.page__header {
-  background: url('http://www.supracer.com/wp-content/uploads/2014/05/Laird-Hamilton-Stand-Up-Paddling.jpg') no-repeat center center fixed;
-  background-size: cover;
-  position: absolute;
-  width: 100%;
-  margin-bottom: 3rem;
-}
-
-ul {
-  margin: 0;
-  padding-left: 0;
-  list-style: none;
-}
-
-.container {
-  width: 100%;
-  max-width: 60rem;
-  margin: auto;
-}
-
-.top-nav{
+.main_right {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 30%;
+  min-width: 12.5rem;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
-
-.nav-group {
+.auth_pub_info {
   display: flex;
-}
-
-.nav-item {
-  margin: 1rem;
-  font-family: sans-serif;
-}
-
-.nav-link {
-  color: orange;
-  text-decoration: none;
-}
-
-.hero {
-  text-align: center;
-  margin: 6rem;
-}
-
-.sub-title {
-  margin: 0.2rem 0 0;
-  font-family: sans-serif;
-  color: orange;
-}
-
-.big-title {
-  margin: 0;
-  font-family: sans-serif;
-  font-size: 4rem;
-  color: orange;
-}
-
-.page__content {
-  margin-top: 22rem;
-}
-
-.row {
-  display: flex;
-}
-
-.page__main {
-  width: 70%;
-  background: red;
-}
-
-.article-heading {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
 }
-
-.page__sidebar {
-  width: 30%;
-  margin-left: 1rem;
-  background: blue;
+.auth_av {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem;
+  padding: .2rem;
 }
 
-.author-info {
-  width: 100%;
+.left_heading {
+  color: darkblue;
+}
+.auth_name {
+  padding: 0rem 1rem 0rem 0rem;
+  color: darkblue;
+}
+.pub_date {
+  color: grey;
+  text-decoration: underline;
+}
+.left_article {
+  padding: 1.8rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.left_quote {
+  padding: .5rem;
+  color: darkblue;
+  border-left: 1px solid black;
+  margin: 1rem;
 }
 
-.student-info__profile-pic {
-  display: block;
-  margin: 0 auto;
-  border-radius: 50%;
+/*Starting right column (sidebar) styling */
+
+.auth_img {
   width: 5rem;
+  height: 5rem;
+  border-radius: 2.5rem;
+  padding-bottom: 0.5rem;
+}
+.auth_name_right {
+  color: darkblue;
+  padding-bottom: 0.2rem;
+  padding-top: 0.2rem;
+}
+.social_links {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  color: grey;
+}
+.social_links_desc {
+  color: gray;
+  margin: 0 .5rem;
+}
+.ad {
+  display: flex;
+  flex-direction: column;
+}
+.ad_img {
+  padding: 2rem 0rem 0rem 0rem;
+}
+.ad_about {
+  align-self: flex-end;
+  color: grey;
+}
+.side_sub_heading {
+  align-self: flex-start;
+  color: darkblue;
+  padding: 2rem 0rem 0rem 0rem;
 }
 
-.student-info__name, .student-info__bio {
-  text-align: center;
-  margin: 0.4rem;
+/*Footer Styling*/
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  border-top: .5px solid lightgrey;
+  padding-top: 2em;
+}
+.footer_title {
+  color: darkblue;
+  font-variant: small-caps;
+}
+.footer_row {
+  display: flex;
+  width: 100%;
+  height: 15rem;
+  overflow: auto;
+}
+.footer_row_column {
+  width: 25%;
+  /*border: 1px solid black;*/
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+.footer_row_column:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(63, 76, 167, 0.7);
+}
+.footer_post_img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.footer_post_text {
+  max-width: 100%;
+  position: absolute;
+  margin-left: 1rem;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  color: white;
+  text-transform: uppercase;
+}
+.footer_row2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  background: darkblue;
+  padding: 1rem;
+}
+.footer_logo {
+  display: flex;
+  align-items: center;
+}
+.footer_logo_img {
+  max-width: 1.5rem;
+}
+.footer_logo_text {
+  color: white;
+  font-size: .5rem;
+  margin-left: .5rem;
+}
+.footer_nav {
+  display: flex;
+  align-items: center;
+}
+.footer_nav_text {
+  font-size: .5rem;
+  border-left: 1px solid #c9c9c9;
+  padding: .5rem;
+  color: white;
 }
 
-.student-info__social-list {
-  margin: auto;
-  text-align: center;
-}
+/* MEDIA QUERIES GO HERE////////*/
 
-.student-info__social-item {
-  display: inline-block;
-  text-align: center;
-}
-
-.ad-caption {
-  font-family: sans-serif;
-}
-
-.sidebar-heading {
-  text-align: center;
-}
-
-.footer-title {
-
-}
+@media screen and (max-width: 40rem) {
+  .header {
+    align-items: center;
+    margin: 0;
+  }
+  .header_navbar {
+    padding: 1rem 0;
+  }
+  .header_title {
+    font-size: 300%;
+    align-self: flex-end;
+  }
+  .header_sub-title {
+    padding: 0 0 2rem;
+  }
+  .navbar_logo {
+    display: none;
+  }
+  .side_sub_heading {
+    display: none;
+  }
+  .right_paragraph {
+    display: none;
+  }
+  .footer_row {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    width: 100%;
+    height: 50rem;
+  }
+  .footer_row_column {
+    height: 25%;
+    width: 100%;
+  }
+  .footer_post_img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
