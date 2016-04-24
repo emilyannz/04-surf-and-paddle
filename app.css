@@ -42,14 +42,13 @@ h1, h2 {
 /*-------HEADER-------*/
 
 .header {
-  background-image: url(http://cdn.grindtv.com/wp-content/uploads/2015/08/image1-1.png);
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  z-index: -1;
+  background: url(http://cdn.grindtv.com/wp-content/uploads/2015/08/image1-1.png) no repeat center center fixed;
+  background-size: cover;
+  background-position: 0 -12em;
+  text-transform: uppercase;
 }
-}
-.header:before {
+
+/*.header:before {
   content: '';
   position: absolute;
   top: 0;
@@ -57,69 +56,63 @@ h1, h2 {
   bottom: 0;
   right: 0;
   background: rgba(63, 76, 167, 0.7);
+}*/
+.navbar {
+  font-weight: bolder;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
 }
-.header_navbar {
-  width: 75%;
-  padding: 1rem;
-  z-index: 1;
-  margin: auto;
+
+.navbar__logo {
+  border-radius: 50%;
 }
-.navbar__row {
-  display: flex;
-  align-items: center;
+
+/*.navbar__logo:hover {
+  color: #f5ecf6;
+}*/
+.navbar__logo-img {
+  border-radius: 50%;
 }
-.navbar_logo {
-  flex-grow: 3;
-  display: flex;
-  align-items: center;
-}
-.navbar_logo_img {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 1.5rem;
-}
-.navbar_logo_text {
-  color: white;
+.navbar__logo-text {
+  color: #ffff;
   padding-left: .5rem;
   font-weight: normal;
 }
-.header_title {
-  color: white;
-  font-size: 500%;
-  font-weight: normal;
-  text-transform: uppercase;
-  text-shadow: .2rem .2rem black;
-  align-self: center;
-  padding: 3rem 0rem 0rem;
-  z-index: 1;
+
+.navbar_links-right {
+  margin: .5rem;
+  color: #ffff;
 }
-.header_sub-title {
-  align-self: center;
-  color: white;
-  padding: .7rem 0rem 7rem;
-  z-index: 1;
+
+.navbar_links-right a {
+  color: inherit;
+  text-decoration: none;
 }
-.navbar_search_about {
-  flex-grow: 1;
-  display: flex;
-  text-transform: uppercase;
-  color: white;
-  text-shadow: .02rem .02rem black;
+
+.navbar_links-right:hover {
+  color: #ffff;
 }
-.navbar_about {
-  margin: 0 .8rem;
+
+.hero {
+  text-align: center;
+  color: #ffff;
+  text-shadow: 0.08em 0.08em #4f4f4f;
+  padding: 5em;
 }
-.navbar_search {}
-.search_icon {
-  padding-left: .4rem;
+
+.header-title {
+  text-align: center;
+  font-size: 4rem;
+  margin: 0;
+  background: -webkit-linear-gradient(#ffa500, #00daff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.main {
-  width: 75%;
-  max-width: 65rem;
-  display: flex;
-  margin: auto;
-  padding: 2rem 0rem;
-  flex-wrap: wrap;
+.header__sub-title {
+  font-size: 0.7em;
+   padding: 0 0 1em;
+   margin: 0;
 }
 
 /*MIN WIDTH OF MAIN SET TO
