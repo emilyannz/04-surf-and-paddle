@@ -115,61 +115,79 @@ h1, h2 {
    margin: 0;
 }
 
-/*MIN WIDTH OF MAIN SET TO
-/*Left column styling*/
+/*-------MAIN-------*/
 
-.main_left {
-  padding: 0rem 3rem 3rem 0rem;
-  flex-basis: 70%;
-  min-width: 15rem;
-  align-self: flex-start;
+.main-container {
   flex-grow: 1;
-  flex-shrink: 1;
-  display: flex;
-  flex-direction: column;
-}
-.main_right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-basis: 30%;
-  min-width: 12.5rem;
-  flex-grow: 1;
-  flex-shrink: 1;
-}
-.auth_pub_info {
   display: flex;
   align-items: center;
-}
-.auth_av {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 1rem;
-  padding: .2rem;
+  justify-content: center;
+  margin: 3rem 0;
 }
 
-.left_heading {
-  color: darkblue;
+.main {
+  display: flex;
+  max-width: 60rem;
 }
-.auth_name {
-  padding: 0rem 1rem 0rem 0rem;
-  color: darkblue;
+
+/*-------LEFT-COLUMN-------*/
+
+.left-column {
+  width: 55%;
+   max-width: 65%;
+   padding-right: 4em;
+   flex-grow: 1;
+   margin: auto;
 }
-.pub_date {
-  color: grey;
+
+.left-column__heading {
+  color: #0f6daa;
+  font-size: 4em;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.left-column__byline {
+  font-size: 0.8em;
+}
+
+.left-column__byline-avatar {
+  border-radius: 50%;
+}
+
+.left-column__byline-author {
+}
+
+.left-column__byline-date {
   text-decoration: underline;
+ }
+
+ .left-column__pullquote {
+   border-left: solid 1px grey;
+   padding: 0.2em;
+   text-transform: uppercase;
+   font-weight: normal;
+   margin-left: 1em;
+   font-size: 1.2em;
+ }
+
+.left-column__social-links {
+ .display: flex;
+  flex-wrap: wrap;
 }
-.left_article {
-  padding: 1.8rem 0;
-  display: flex;
-  flex-direction: column;
+
+.button {
+  background: #9ca9bb;
+  color: #e7e7e7;
+  margin: 0.5em;
+  padding: .7em 1em;
+  text-align: center;
+  flex-grow: 1;
+  font-size: 1em;
+  font-weight: bold;
 }
-.left_quote {
-  padding: .5rem;
-  color: darkblue;
-  border-left: 1px solid black;
-  margin: 1rem;
-}
+
 
 /*Starting right column (sidebar) styling */
 
