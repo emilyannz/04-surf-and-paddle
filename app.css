@@ -6,11 +6,41 @@
 *::before, *::after {
   box-sizing: inherit;
 }
-.container {
+
+body {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  margin: 0;
+  font-family: sans-serif;
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+li {
+  display: inline;
+}
+
+.container {
+  max-width: 65rem;
+  margin: auto;
+}
+
+p {
+  color: #424242;
+}
+
+h1, h2 {
+  color: #0f6daa;
+}
+
+/*-------HEADER-------*/
+
 .header {
   background-image: url(http://cdn.grindtv.com/wp-content/uploads/2015/08/image1-1.png);
   position: relative;
