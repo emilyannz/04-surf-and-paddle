@@ -6,9 +6,9 @@
   box-sizing: inherit;
 }
 
-
-
 body {
+  padding: 0;
+  margin: 0;
   font-family: sans-serif;
 }
 
@@ -27,24 +27,33 @@ li {
   cursor: pointer;
 }
 
+.container {
+  max-width: 70em;
+  margin: auto;
+}
 
+.heading-blue {
+  color:#0f60aa;
+}
 
 .link-blue {
   color: #6b7fa3;
 }
 
 
+
 /*HERO-HEADER*/
-.container {
-  max-width: 70em;
-  margin: auto;
-}
+
 
 .header-nav {
   font-size: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: #fff;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 1rem;
 }
 
 .header-nav__left {
@@ -53,7 +62,7 @@ li {
 
 .header-nav__logo {
   border-radius: 50%;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   vertical-align: middle;
   height: 2rem ;
   width: 2rem;
@@ -61,7 +70,6 @@ li {
 
 .header-nav__title {
   display: inline;
-  background: rgba(255, 255, 255, 0.8);
   border-top-right-radius: 1em;
   border-bottom-left-radius: 1em;
   padding: 0.1em 3.5em 0 1.5em;
@@ -78,21 +86,21 @@ li {
 
 .hero {
   text-align: center;
-  padding: 5em;
+  padding-bottom: 10em;
   background: url("http://cdn.grindtv.com/wp-content/uploads/2015/08/image1-1.png") no-repeat center center fixed;
-  color: #fff;
 }
-
 
 .header-title {
   font-size: 5em;
-  font-color: #fff;
-  font-weight: 500;
+  color: #fff;
 }
 
 .header-subtitle {
   font-size: 1rem;
-  font-weight: 300;
+  padding: 0 0 1em;
+  margin: 0;
+  color: #fff;
+  font-weight: lighter;
 }
 
 /*MAIN*/
@@ -176,8 +184,8 @@ li {
 
 .sidebar-avatar {
   border-radius: 50%;
-  height: 50px;
-  width: 50px;
+  height: 150px;
+  width: 150px;
 }
 
 .sidebar-profile__name {
