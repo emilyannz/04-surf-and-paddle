@@ -138,7 +138,6 @@ li {
   font-weight: normal;
   margin-left: 1em;
   font-size: 2rem;
-  color: #00B6C5;
 }
 
 .content-links {
@@ -177,8 +176,8 @@ li {
 
 .sidebar-avatar {
   border-radius: 50%;
-  height: 150px;
-  width: 150px;
+  height: 50px;
+  width: 50px;
 }
 
 .sidebar-profile__name {
