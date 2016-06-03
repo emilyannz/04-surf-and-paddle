@@ -43,29 +43,22 @@ li {
 
 
 /*HERO-HEADER*/
-
+header {
+background: url("images/teahupoo.jpg") no-repeat center center fixed;
+background-size: cover;
+background-position: 0 -12em;
+text-transform: uppercase;
+}
 
 .header-nav {
-  font-size: 1rem;
+  font-weight: bolder;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #fff;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  padding-top: 1rem;
 }
 
 .header-nav__left {
 
-}
-
-.header-nav__logo {
-  border-radius: 50%;
-  border: 1px solid #fff;
-  vertical-align: middle;
-  height: 2rem ;
-  width: 2rem;
 }
 
 .header-nav__title {
@@ -76,7 +69,17 @@ li {
   font-size: 1rem;
 }
 
+.header-nav__logo {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  vertical-align: middle;
+  height: 2rem ;
+  width: 2rem;
+}
+
 .header-nav__right {
+  color: #83C9F7;
+  text-shadow: 0.05em 0.05em rgba(0, 0, 0, 0.9);
 }
 
 .header-nav__btn {
@@ -88,7 +91,20 @@ li {
   text-align: center;
   padding-bottom: 10em;
   background: url("http://cdn.grindtv.com/wp-content/uploads/2015/08/image1-1.png") no-repeat center center fixed;
+  max-width: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 .header-title {
   font-size: 5em;
