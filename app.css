@@ -79,7 +79,6 @@ text-transform: uppercase;
 
 .header-nav__right {
   color: #83C9F7;
-  text-shadow: 0.05em 0.05em rgba(0, 0, 0, 0.9);
 }
 
 .header-nav__btn {
