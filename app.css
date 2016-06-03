@@ -5,11 +5,11 @@
 *::before, *::after {
   box-sizing: inherit;
 }
-
-body {
-  padding: 0;
+html, body {
   margin: 0;
   font-family: sans-serif;
+  color: #2d2d2d;
+  font-size: 1em;
 }
 
 ul {
@@ -44,7 +44,7 @@ li {
 
 /*HERO-HEADER*/
 header {
-background: url("images/teahupoo.jpg") no-repeat center center fixed;
+background: url("images/teahupoo.png") no-repeat center center fixed;
 background-size: cover;
 background-position: 0 -12em;
 text-transform: uppercase;
@@ -58,7 +58,7 @@ text-transform: uppercase;
 }
 
 .header-nav__left {
-
+  color: #fff;
 }
 
 .header-nav__title {
@@ -78,7 +78,7 @@ text-transform: uppercase;
 }
 
 .header-nav__right {
-  color: #83C9F7;
+  color: #fff;
 }
 
 .header-nav__btn {
@@ -89,7 +89,6 @@ text-transform: uppercase;
 .hero {
   text-align: center;
   color: #ffffff;
-  text-shadow: 0.08em 0.08em #4f4f4f;
   padding: 5em;
 }
 
