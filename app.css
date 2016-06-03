@@ -89,21 +89,10 @@ text-transform: uppercase;
 
 .hero {
   text-align: center;
-  padding-bottom: 10em;
-  background: url("http://cdn.grindtv.com/wp-content/uploads/2015/08/image1-1.png") no-repeat center center fixed;
-  max-width: 100%;
+  color: #ffffff;
+  text-shadow: 0.08em 0.08em #4f4f4f;
+  padding: 5em;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 .header-title {
@@ -161,7 +150,7 @@ text-transform: uppercase;
   text-transform: uppercase;
   font-weight: normal;
   margin-left: 1em;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .content-links {
@@ -236,18 +225,14 @@ text-transform: uppercase;
 /*////////////////////////////////////////////////////*/
 /*                       Footer                       */
 .footer {
-  max-width: 95rem;
-  margin: auto;
-
-  /*max-width: 70rem;
   border-top: 1px solid lightgrey;
-  margin-top: 4em;*/
+  margin-top: 4em;
 }
 
 .footer-content__title {
   text-align: center;
   font-size: 4em;
-  margin: 0.4em;
+  margin: 0.5em;
   text-transform: uppercase;
   color: #1d334e;
   font-weight: bold;
@@ -262,8 +247,8 @@ text-transform: uppercase;
 
 .footer-content__post {
   flex-grow: 1;
-  justify-content: space-around;
   position: relative;
+  margin-bottom: -0.3rem;
 }
 
  .overlay {
