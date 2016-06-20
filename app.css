@@ -6,7 +6,7 @@
   box-sizing: inherit;
 }
 html, body {
-  width: 75%;
+  width: 85%;
   margin: auto;
   font-family: sans-serif;
   color: #2d2d2d;
@@ -60,6 +60,7 @@ text-transform: uppercase;
 
 .header-nav__left {
  color: #fff;
+ padding-left: 1rem;
 }
 
 .header-nav__title {
@@ -80,6 +81,7 @@ text-transform: uppercase;
 
 .header-nav__right {
    color: #fff;
+   padding-right: 1rem;
 }
 
 .header-nav__btn {
@@ -90,7 +92,7 @@ text-transform: uppercase;
 .hero {
   text-align: center;
   color: #ffffff;
-  padding: 5em;
+  padding: 2em;
 }
 
 
@@ -239,7 +241,7 @@ text-transform: uppercase;
 
 .footer-content__links {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
   color: silver;
 }
