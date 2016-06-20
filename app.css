@@ -6,7 +6,8 @@
   box-sizing: inherit;
 }
 html, body {
-  margin: 0;
+  width: 75%;
+  margin: auto;
   font-family: sans-serif;
   color: #2d2d2d;
   font-size: 1em;
@@ -58,7 +59,7 @@ text-transform: uppercase;
 }
 
 .header-nav__left {
-  color: #fff;
+ color: #fff;
 }
 
 .header-nav__title {
@@ -78,7 +79,7 @@ text-transform: uppercase;
 }
 
 .header-nav__right {
-  color: #fff;
+   color: #fff;
 }
 
 .header-nav__btn {
